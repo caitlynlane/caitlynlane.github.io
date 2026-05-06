@@ -7,8 +7,7 @@ img {
 	display: block;
 }
 
-div.container,
-div.home-container {
+div.container, div.home-container {
 	max-width: 50em;
 	margin: auto;
 }
@@ -240,7 +239,7 @@ aside p {
 	}
 
 	div.container aside {
-		margin-top: 0em;
+		margin-top: 0;
 	}
 
 	section.mainstory {
