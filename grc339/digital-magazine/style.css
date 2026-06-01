@@ -362,7 +362,7 @@ nav.gallery {
 main.gallery {
     position: relative;
     overflow: hidden;
-    padding-bottom: calc(1% + 30em);
+    padding-bottom: calc(100% + 4em);
 	max-width: 40em;
 	margin: auto;
 }
@@ -426,7 +426,7 @@ figcaption.gallery {
 	}
 
 	main.gallery {
-		padding-bottom: calc(1% + 43em);
+		padding-bottom: calc(40em + 4em);
 	}
 
 }
@@ -454,7 +454,7 @@ figcaption.gallery {
 	}
 
 	main.gallery {
-		padding-bottom: calc(1% + 43em);
+		padding-bottom: calc(40em + 4em);
 		margin: auto;
 	}
 
@@ -539,8 +539,65 @@ figcaption.gallery {
 		flex: 0 0 4em;
 	}
 
-	main.gallery {
-		padding-bottom: calc(1% + 43em);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	
+	h1 img,
+    h1.newsletter img {
+        content: url("TheLineupLogoDark.svg");
+    }
+
+	nav ul li a:hover {
+		color: #f1eee5;
+	}
+	
+	div.container,
+    div.home-container,
+    div.newsletter-container,
+    div.gallery-container {
+        background-color: #760016;
+    }
+	 
+	section.mainstory p,
+	section.secondarystory p,
+	section.tertiarystory p,
+	article p,
+	aside p,
+	section.subscribe p,
+	section.subscribe {
+		color: #f1eee5;
+	}
+
+	aside {
+        background-color: #760016;
+    }
+
+	section.mainstory,
+    section.secondarystory,
+    section.tertiarystory,
+    aside section {
+        border-color: #f1eee5;
+	}
+
+	.footer {
+		background-color: #fd49c6;
+		color: #f1eee5;
+	}
+
+	button[type="submit"] {
+		background-color: #fd49c6;
+	} 
+
+	button[type="submit"]:hover {
+		background-color: #1093ff;
+	}
+
+    input[type="text"],
+    input[type="email"] {
+        background-color: #2a2a2a;
+        color: #e8e0d0;
+        border-color: #555;
 	}
 
 }
